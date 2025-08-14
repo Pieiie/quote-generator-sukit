@@ -9,6 +9,8 @@ on:
 jobs:
   test-and-deploy:
     runs-on: ubuntu-latest
+    permissions:      # <--- เพิ่ม 2 บรรทัดนี้
+      contents: write   # <--- เข้าไป
     
     steps:
     # 1. Checkout โค้ดของเราลงมา
